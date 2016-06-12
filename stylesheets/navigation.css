@@ -1,0 +1,77 @@
+.topbar {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 34px;
+  padding-right: 34px;
+  height: 80px;
+  background-color: #000;
+  border-bottom: 1px solid #ccc;
+}
+
+.topbar__main {
+  float: left;
+}
+
+.topbar__image {
+  max-height: 40px;
+  vertical-align: middle;
+  margin: 5px 20px 10px 5px;
+  transition: transform 0.7s ease;
+}
+.topbar__image:hover {
+  transform: rotate(360deg);
+}
+
+.topbar__title {
+  font-family: "Carlito", cursive;
+  font-size: 28px;
+  line-height: 80px;
+  cursor: default;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.topbar__title a,
+.topbar__title a:visited {
+  color: #d2d0d3;
+  text-decoration: none;
+}
+
+.topbar__nav {
+  float: right;
+  line-height: 80px;
+}
+
+.topbar__link {
+  font-family: "Carlito", sans;
+  font-size: 24px;
+  font-weight: 300;
+  color: #d2d0d3;
+  text-decoration: none;
+}
+
+.topbar__link:hover {
+  color: #006699;
+}
+
+.topbar__separator {
+  font-family: "Carlito", sans;
+  font-size: 24px;
+  font-weight: 400;
+  color: #d2d0d3;
+}
+
+.topbar__separator--pipe:after {
+  margin-left: 8px;
+  margin-right: 8px;
+  content: "|";
+}
+
+.topbar__separator--dot:after {
+  margin-left: 6px;
+  margin-right: 6px;
+  content: "·";
+}
